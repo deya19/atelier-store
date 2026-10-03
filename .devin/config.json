@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(**)",
+      "Exec(npm run lint)",
+      "Exec(npm run build)",
+      "Exec(npx tsc --noEmit)",
+      "Exec(git status)",
+      "Exec(git diff)"
+    ],
+    "ask": [
+      "Exec(git push)"
+    ],
+    "deny": [
+      "Read(.env)",
+      "Read(.env.*)",
+      "Write(.env)",
+      "Write(.env.*)"
+    ]
+  }
+}
